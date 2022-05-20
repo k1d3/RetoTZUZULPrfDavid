@@ -1,0 +1,16 @@
+.orr{
+display: flex;
+flex-wrap: wrap;
+}
+.box{
+    
+    
+    width: 50px;
+    height: 50px;
+    transition: box-shadow .3s;
+}
+.box:hover{
+     box-shadow: 0 20px 45px rgba(216, 126, 8, 0.822);
+    
+
+}

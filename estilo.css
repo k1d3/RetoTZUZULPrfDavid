@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-family: "Inconsolata", monospace;
+  background-image: url("https://3.bp.blogspot.com/-K27B_AfaKsg/UHm-akGgCdI/AAAAAAAAB1I/0awTzAFQUFg/s1600/Arbol+digital+naranja+en+un+fondo+oscuro.jpg");
+
+  background-size: cover;
+  background-position: 0 -150px;
+}
+nav {
+  background-color: rgba(107, 104, 104, 0.733);
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+}
+ul{
+  position: relative;
+  text-align: right;
+  margin-right: 30px;
+}
+li{
+  display: inline-block;
+  
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  
+  
+}
+.active{
+  
+  animation-name: txt;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+  
+}
+@keyframes txt {
+  0%{ color:rgba(241, 190, 122, 0.822);}
+  25%{color:rgba(243, 175, 85, 0.822); }
+  50%{color:rgba(245, 158, 45, 0.822); }
+  75%{ color:rgba(248, 148, 18, 0.822);}
+  100%{ color:rgba(255, 145, 0, 0.87);}
+  
+}
+.contenedor {
+  /* background: linear-gradient(#4dfae9, #00665c);*/
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/000/830/913/non_2x/dark-background-with-aqua-overlapping-layers-vector.jpg");*/
+  
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja {
+  height: 60vh;
+  width: 50vw;
+  background-color: rgba(37, 34, 34, 0.2);
+  border: 2.5px solid rgba(255, 255, 255, 0.692);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(216, 126, 8, 0.822);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: opacity(0.8);
+  position: fixed;
+}
+.conten div {
+  margin: 15px 0;
+  color: rgb(255, 255, 255);
+}
+
+.burbuja {
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.3);
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  animation-name: brj;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+
+  filter: blur(1px);
+}
+.burbu {
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  animation-name: brj;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+
+  filter: blur(1px);
+}
+
+.burbuja:first-child {
+  bottom: -80%;
+  left: 5%;
+  animation-delay: 4s;
+}
+.burbuja:nth-child(2) {
+  bottom: -80%;
+  left: 40%;
+  animation-delay: 5s;
+}
+.burbuja:nth-child(3) {
+  bottom: -80%;
+  left: 65%;
+  animation-delay: 1s;
+}
+.burbuja:nth-child(4) {
+  bottom: -80%;
+  left: 85%;
+  animation-delay: 3s;
+}
+/*------------------------*/
+.burbu:nth-child(5) {
+  bottom: -80%;
+  left: 25%;
+  animation-delay: 3s;
+}
+.burbu:nth-child(6) {
+  bottom: -80%;
+  left: 75%;
+  animation-delay: 6s;
+}
+.burbu:nth-child(7) {
+  bottom: -80%;
+  left: 15%;
+  animation-delay: 7s;
+}
+.burbu:nth-child(8) {
+  bottom: -80%;
+  left: 30%;
+  animation-delay: 2s;
+}
+.burbu:nth-child(9) {
+  bottom: -80%;
+  left: 95%;
+  animation-delay: 4s;
+}
+.burbu:nth-child(10) {
+  bottom: -80%;
+  left: 50%;
+  animation-delay: 5s;
+}
+@keyframes brj {
+  0% {
+  }
+  100% {
+    transform: translateY(-2600%);
+  }
+}
+
+/*inpus*/
+.conten div label {
+  display: block;
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 5px 15px rgb(0, 0, 0);
+}
+.inputss input {
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+  color: #fff;
+  border: none;
+  padding: 3px;
+  font-size: 15px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+.inputss input::placeholder {
+  background-image: url("http://orig04.deviantart.net/1c17/f/2010/148/3/a/20x20_png_icons_domo_2_by_jmcivor.png");
+  background-repeat: no-repeat;
+}
+.inputss button {
+  background: linear-gradient(rgba(253, 253, 253, 0.956), rgba(0, 0, 0, 0.49));
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.inputss button:hover {
+  cursor: pointer;
+}
+.inputss input:focus {
+  border-bottom: 3px solid rgba(238, 148, 30, 0.795);
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 10px 15px rgba(245, 140, 70, 0.795);
+}
